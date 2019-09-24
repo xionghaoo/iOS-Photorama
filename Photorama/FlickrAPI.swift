@@ -12,11 +12,6 @@ enum FlickrError: Error {
     case invalidJSONData
 }
 
-enum PhotosResult {
-    case success([Photo])
-    case failure(Error)
-}
-
 enum Method: String {
     case interestingPhotos = "flickr.interestingness.getList"
 }
