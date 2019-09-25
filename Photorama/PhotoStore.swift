@@ -24,6 +24,8 @@ enum PhotosResult {
 
 class PhotoStore {
     
+    private var imageStore = ImageStore()
+    
     let session: URLSession = {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
@@ -49,9 +51,20 @@ class PhotoStore {
     }
     
     func fetchImage(photo: Photo, completion: @escaping (ImageResult) -> Void) {
+        
+        if let image = imageStore.image(forKey: photo.photoID) {
+            OperationQueue.main.addOperation {
+                completion(ImageResult.success(image))
+            }
+            return
+        }
+        
         let request = URLRequest(url: photo.remoteURL)
         session.dataTask(with: request) { (data, response, error) -> Void in
             let result = self.proccessImageRequest(with: data, error: error)
+            if case let .success(image) = result {
+                self.imageStore.setImage(image, forKey: photo.photoID)
+            }
             OperationQueue.main.addOperation {
                 completion(result)
             }

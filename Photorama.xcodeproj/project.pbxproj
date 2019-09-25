@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE4F127D233B954F00651DF1 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F127C233B954F00651DF1 /* PhotoCollectionViewCell.swift */; };
+		DE4F127F233BA39800651DF1 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F127E233BA39800651DF1 /* ImageStore.swift */; };
+		DE4F1281233BA6B400651DF1 /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F1280233BA6B400651DF1 /* PhotoPreviewViewController.swift */; };
 		DE56AAC32333C22C00634A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56AAC22333C22C00634A26 /* AppDelegate.swift */; };
 		DE56AAC82333C22C00634A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE56AAC62333C22C00634A26 /* Main.storyboard */; };
 		DE56AACA2333C22D00634A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE56AAC92333C22D00634A26 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE4F127C233B954F00651DF1 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE4F127E233BA39800651DF1 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		DE4F1280233BA6B400651DF1 /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
 		DE56AABF2333C22C00634A26 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE56AAC22333C22C00634A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE56AAC72333C22C00634A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 				DE56AAF42333CD5E00634A26 /* PhotoStore.swift */,
 				DE56AAF62333D51A00634A26 /* Photo.swift */,
 				DE9B475B233A55ED00BA47E1 /* PhotoDataSource.swift */,
+				DE4F127C233B954F00651DF1 /* PhotoCollectionViewCell.swift */,
+				DE4F127E233BA39800651DF1 /* ImageStore.swift */,
+				DE4F1280233BA6B400651DF1 /* PhotoPreviewViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -271,7 +280,10 @@
 				DE56AAF32333C71100634A26 /* FlickrAPI.swift in Sources */,
 				DE56AAF12333C50A00634A26 /* PhotosViewController.swift in Sources */,
 				DE56AAF52333CD5E00634A26 /* PhotoStore.swift in Sources */,
+				DE4F1281233BA6B400651DF1 /* PhotoPreviewViewController.swift in Sources */,
+				DE4F127F233BA39800651DF1 /* ImageStore.swift in Sources */,
 				DE9B475C233A55ED00BA47E1 /* PhotoDataSource.swift in Sources */,
+				DE4F127D233B954F00651DF1 /* PhotoCollectionViewCell.swift in Sources */,
 				DE56AAC32333C22C00634A26 /* AppDelegate.swift in Sources */,
 				DE56AAF72333D51A00634A26 /* Photo.swift in Sources */,
 			);
